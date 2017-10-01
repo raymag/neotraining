@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+<meta charset='utf-8'/>
+<title>GridLayout</title>
+<style>
+.container{
+display: grid;
+grid-template-columns: 200px 1% 1fr;
+grid-template-rows: 10% 40% 50%;
+grid-gap: 15px;
+}
+
+.footer{
+grid-column: 1;
+grid-column-end: 4;
+grid-row: 6;
+background: yellow;
+}
+
+.header{
+grid-column-start: 1;
+grid-column-end: 4;
+background: #722;
+}
+.sidebar{
+grid-column: 1;
+grid-row: 3;
+background: #227;
+}
+.main{
+grid-column: 3;
+grid-row: 3;
+background: #22a;
+}
+.header, .footer, .main, .sidebar{
+padding: 10px;
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<div class='header'>
+<h1>Cabeçalho</h1>
+</div>
+<div class='main'>
+<h2>Main</h2>
+<p>Conteudo principal</p>
+</div>
+<div class='sidebar'>
+<ul>
+<li>algo</li>
+<li>algo</li>
+<li>algo</li>
+<li>algo</li>
+</ul>
+</div>
+<div class='footer'>
+footer
+</div>
+</div>
+</body>
+</html>
